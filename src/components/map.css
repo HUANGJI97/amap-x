@@ -1,0 +1,108 @@
+.custom-marker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 98;
+  position: absolute;
+}
+.custom-marker:hover {
+  z-index: 99;
+  color: red;
+}
+.custom-marker-title {
+  width: 132px;
+  height: 40px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+/** 标题部分背景 **/
+.custom-marker.green .custom-marker-title {
+  background: url("../assets/images/amap/bg-marker-title-green.png") center /
+    100% 100% no-repeat;
+}
+.custom-marker.yellow .custom-marker-title {
+  background: url("../assets/images/amap/bg-marker-title-yellow.png") center /
+    100% 100% no-repeat;
+}
+.custom-marker.blue .custom-marker-title {
+  background: url("../assets/images/amap/bg-marker-title-blue.png") center /
+    100% 100% no-repeat;
+}
+.custom-marker.red .custom-marker-title {
+  background: url("../assets/images/amap/bg-marker-title-red.png") center / 100%
+    100% no-repeat;
+}
+
+/**
+* 指针位置背景 (未选中状态)
+**/
+.custom-marker.red .custom-marker-pointer {
+  background: url("../assets/images/amap/bg-marker-pointer-red.png") center /
+    100% 100% no-repeat;
+}
+.custom-marker.green .custom-marker-pointer {
+  background: url("../assets/images/amap/bg-marker-pointer-green.png") center /
+    100% 100% no-repeat;
+}
+.custom-marker.yellow .custom-marker-pointer {
+  background: url("../assets/images/amap/bg-marker-pointer-yellow.png") center /
+    100% 100% no-repeat;
+}
+.custom-marker.blue .custom-marker-pointer {
+  background: url("../assets/images/amap/bg-marker-pointer-blue.png") center /
+    100% 100% no-repeat;
+}
+
+/**
+* 指针位置背景 (选中状态)
+**/
+.custom-marker.red.actived .custom-marker-pointer {
+  background: url("../assets/images/amap/bg-marker-pointer-active-red.png")
+    center / 100% 100% no-repeat;
+}
+.custom-marker.green.actived .custom-marker-pointer {
+  background: url("../assets/images/amap/bg-marker-pointer-active-green.png")
+    center / 100% 100% no-repeat;
+}
+.custom-marker.yellow.actived .custom-marker-pointer {
+  background: url("../assets/images/amap/bg-marker-pointer-active-yellow.png")
+    center / 100% 100% no-repeat;
+}
+.custom-marker.blue.actived .custom-marker-pointer {
+  background: url("../assets/images/amap/bg-marker-pointer-active-blue.png")
+    center / 100% 100% no-repeat;
+}
+
+.custom-marker.actived .custom-marker-pointer {
+  width: 90px;
+  height: 71px;
+  background: url("../assets/images/icon-selected.jpg") center / 100% no-repeat;
+  pointer-events: none;
+}
+.custom-marker-pointer {
+  background: url("../assets/images/icon-normal.jpg") center / 100% no-repeat;
+  width: 30px;
+  height: 33px;
+  display: block;
+  pointer-events: none;
+}
+
+.custom-info-window {
+  width: 300px;
+  height: 120px;
+  /* background: #27677ecc; */
+  border-radius: 8px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid #26b9dd; */
+  background: url("../assets/images/amap/bg-info-window.png") center / 100% 100%
+    no-repeat;
+}
